@@ -1,3 +1,4 @@
+/* #region Common */
 * {
     margin: 0;
     padding: 0;
@@ -16,3 +17,10 @@ body {
     --rl-dark: #333333;
     --rl-black: #000000;
 }
+
+/* #endregion Common */
+
+/* #region Debug */
+
+
+/* #endregion Debug */
