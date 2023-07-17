@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'PT Sans', sans-serif;
 }
 
 :root {
@@ -16,11 +16,146 @@ body {
     --rl-front-light: #b5ddff;
     --rl-dark: #333333;
     --rl-black: #000000;
+    --rl-light: #d8d9da;
 }
 
 /* #endregion Common */
 
 /* #region Debug */
 
+.debug #head_site {
+    height: 70px;
+}
+
+.debug #main_site {
+    background-color: lightcoral;
+    height: 1200px;
+}
+
+.debug #foot_site {
+    background-color: lightgreen;
+    height: 150px;
+}
+
 
 /* #endregion Debug */
+
+/* #region Utilities */
+
+.container {
+    max-width: 1152px;
+    margin: auto;
+
+}
+
+.d_flex {
+    display: flex;
+}
+
+.d_none {
+    display: none;
+}
+
+.d_block {
+    display: block;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1;
+}
+
+[class^="col"] {
+    padding: 0 1rem;
+}
+
+.col_12 {
+    width: 100%;
+}
+
+.col_8 {
+    width: calc(100% / 12 * 8);
+}
+
+.col_6 {
+    width: calc(100% / 12 * 6);
+}
+
+.col_4 {
+    width: calc(100% / 12 * 4);
+}
+
+.list_unstiled {
+    list-style: none;
+}
+
+
+
+/* #endregion Utilities */
+
+/* #region Btn */
+
+.btn {
+    border-radius: 16px;
+}
+
+.nav .btn {
+    background-color: var(--rl-light);
+}
+
+/* #endregion Btn */
+
+
+
+/* Mobile-First */
+
+/* #region Header */
+
+
+#head_site {
+    background-color: var(--rl-front);
+}
+
+#head_site a {
+    text-decoration: none;
+}
+
+nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+/* #endregion Header */
+
+
+/* #region Tablet */
+
+/* @media screen and (min-width: 768) {
+    
+} */
+
+/* #endregion Tablet */
+
+
+
+/* #region Desktop */
+
+@media screen and (min-width: 768px) {
+    .d-lg-block {
+        display: block;
+    }
+    .container {
+        width: 100%;
+    }
+    .d-lg-none {
+        display: none;
+    }
+}
+
+/* #endregion Desktop */
