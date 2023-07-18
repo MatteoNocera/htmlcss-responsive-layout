@@ -24,30 +24,6 @@ body {
 
 /* #endregion Common */
 
-/* #region Debug */
-
-.debug #head_site {
-    height: 70px;
-}
-
-.debug #main_site {
-    background-color: lightcoral;
-    height: 1200px;
-}
-
-.debug #foot_site {
-    background-color: lightgreen;
-    height: 150px;
-}
-
-.debug [class*="col"] {
-    background-color: green;
-    height: 600px;
-    border: 1px dashed white;
-}
-
-
-/* #endregion Debug */
 
 /* #region Utilities */
 
@@ -195,11 +171,9 @@ section {
 /* #endregion Btn */
 
 
-
 /* Mobile-First */
 
 /* #region Header */
-
 
 #head_site {
     background-color: var(--rl-front);
@@ -211,8 +185,6 @@ nav {
     padding: 0.8rem 0;
 }
 
-
-
 .list_menu ul {
     gap: 1rem;
     color: var(--rl-white);
@@ -223,6 +195,7 @@ nav {
 /* #region Main */
 
 /* #region services */
+
 .services h2 {
     color: var(--rl-front);
 }
@@ -312,7 +285,7 @@ nav {
     object-fit: cover;
     border-radius: 50%;
     max-width: 80%;
-    aspect-ratio: 1;
+    aspect-ratio: 1/1;
 }
 
 .cit h5 {
