@@ -121,6 +121,10 @@ img {
     background-color: var(--rl-front-light);
 }
 
+header a, main a {
+    text-decoration: none;
+}
+
 
 
 /* #endregion Utilities */
@@ -149,6 +153,13 @@ img {
     width: 3rem;
     height: 3rem;
     line-height: 3rem;
+}
+
+.benefits a {
+    background-color: var(--rl-principal);
+    padding: 0.5rem 2rem;
+    border-radius: 2rem;
+    color: var(--rl-white);
 }
 
 /* #endregion Btn */
@@ -217,7 +228,7 @@ nav {
 }
 /* /.servicies */
 
-.plannings {
+.plannings, .benefits {
     background-color: var(--rl-principal);
     color: var(--rl-white);
 }
@@ -229,13 +240,16 @@ nav {
 
 .w_card {
     background-color: var(--rl-white);
-    border-radius: 3rem;
-    padding: 1rem 0;
-    text-align: center;
+    border-radius: 2rem;
     margin-top: 1rem;
     color: var(--rl-black);
     flex-direction: column;
     align-items: center;
+}
+
+.plannings .w_card {
+    text-align: center;
+    padding: 1rem 0;
 }
 
 .w_card h4 {
@@ -259,7 +273,6 @@ nav {
     background-color: var(--rl-principal);
     border-radius: 2rem;
     flex-direction: column;
-    
 }
 
 .testimonials h2 {
@@ -282,10 +295,35 @@ nav {
 .cit {
     color: var(--rl-white);
     line-height: 2rem;
+    font-style: italic;
+}
+/* /.testimonials */
+
+.benefits {
+    color: var(--rl-white);
 }
 
+.benefits h2 {
+    padding: 2rem 0;
+    text-align: center;
+}
 
+.benefits i {
+    padding-top: 1rem;
+}
 
+.benefits h3 {
+    color: var(--rl-principal);
+    padding: 1rem 0;
+}
+
+.benefits .w_card {
+    padding: 2rem
+}
+
+.benefits p {
+    margin-bottom: 1rem;
+}
 
 /* #endregion Main */
 
@@ -299,6 +337,9 @@ nav {
     }
     .services .col_md_4 {
         width: calc(100% / 12 * 4);
+    }
+    .col_md_6 {
+        width: calc(100% / 12 * 6);
     }
     .phone {
         width: 50%;
@@ -343,6 +384,9 @@ nav {
     }
     .plannings h2 {
         padding-bottom: 7rem;
+    }
+    .col_lg_4 {
+        width: calc(100% / 12 * 4);
     }
 }
 
