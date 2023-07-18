@@ -120,6 +120,17 @@ img {
 
 .services .card {
     background-color: var(--rl-front-light);
+    box-shadow: 0 0 10px 3px var(--rl-front) inset;
+}
+
+.w_card {
+    background-color: var(--rl-white);
+    border-radius: 2rem;
+    margin-top: 1rem;
+    color: var(--rl-black);
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px 3px var(--rl-principal) inset;
 }
 
 header a, main a {
@@ -129,6 +140,10 @@ header a, main a {
 .plannings, .benefits, .free {
     background-color: var(--rl-principal);
     color: var(--rl-white);
+}
+
+section {
+    padding: 2rem 0;
 }
 
 /* #endregion Utilities */
@@ -251,15 +266,6 @@ nav {
     padding: 1rem 0;
 }
 
-.w_card {
-    background-color: var(--rl-white);
-    border-radius: 2rem;
-    margin-top: 1rem;
-    color: var(--rl-black);
-    flex-direction: column;
-    align-items: center;
-}
-
 .plannings .w_card {
     text-align: center;
     padding: 2rem;
@@ -288,6 +294,7 @@ nav {
     background-color: var(--rl-principal);
     border-radius: 2rem;
     flex-direction: column;
+    box-shadow: 0 0 10px 3px var(--rl-white) inset;
 }
 
 .testimonials h2 {
