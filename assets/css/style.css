@@ -411,6 +411,23 @@ nav {
 
 /* #endregion Main */
 
+/* #region Footer */
+
+#foot_site {
+    background-color: var(--rl-dark);
+    color: var(--rl-white);
+    text-align: center;
+}
+
+#foot_site p {
+    padding: 2rem 0;
+}
+
+#foot_site a {
+    color: var(--rl-principal);
+}
+
+/* #endregion Footer */
 
 
 /* #region Tablet */
@@ -447,7 +464,7 @@ nav {
     .about_us .profile, .col_md_7 {
         padding: 2rem;
     }
-    .free .container {
+    .free .container, #foot_site .container {
         max-width: 60%;
     }
 
@@ -484,7 +501,7 @@ nav {
     .col_lg_4 {
         width: calc(100% / 12 * 4);
     }
-    .free .container {
+    .free .container, #foot_site .container {
         max-width: 30%;
     }
     
