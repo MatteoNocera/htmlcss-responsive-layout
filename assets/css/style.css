@@ -155,11 +155,15 @@ header a, main a {
     line-height: 3rem;
 }
 
-.benefits a {
+.benefits a, .about_us a {
     background-color: var(--rl-principal);
-    padding: 0.5rem 2rem;
-    border-radius: 2rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
     color: var(--rl-white);
+}
+
+.about_us a {
+    text-align: center;
 }
 
 /* #endregion Btn */
@@ -249,7 +253,7 @@ nav {
 
 .plannings .w_card {
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem;
 }
 
 .w_card h4 {
@@ -283,9 +287,10 @@ nav {
 .profile {
     height: 100%;
     width: 100%;
+    position: relative;
 }
 
-.testimony {
+.testimony, .about_img {
     object-fit: cover;
     border-radius: 50%;
     max-width: 80%;
@@ -324,6 +329,40 @@ nav {
 .benefits p {
     margin-bottom: 1rem;
 }
+/* /.benefits */
+
+.about_us {
+    margin: 2rem 0;
+}
+
+.about_us h2 {
+    font-size: 2.5rem;
+    color: var(--rl-principal);
+}
+
+.about_us p {
+    padding-top: 2rem;
+    line-height: 1.8rem;
+}
+
+#quote {
+    position: absolute;
+    top: 3rem;
+    left:calc(100% / 12 * 7);
+    font-size: 4rem;
+}
+
+.about_us .profile {
+    flex-direction: column;
+}
+
+.about_us cite {
+    margin: 2rem 0;
+    font-size: 2rem;
+    color: var(--rl-principal);
+    font-weight: bold;
+}
+/* /.about_us */
 
 /* #endregion Main */
 
@@ -332,19 +371,25 @@ nav {
 /* #region Tablet */
 
 @media screen and (min-width: 768px) {
-    .services .col_md_8 {
+    .col_md_8 {
         width: calc(100% / 12 * 8);
     }
-    .services .col_md_4 {
-        width: calc(100% / 12 * 4);
+    .col_md_7 {
+        width: calc(100% / 12 * 7);
     }
     .col_md_6 {
         width: calc(100% / 12 * 6);
     }
+    .col_md_5 {
+        width: calc(100% / 12 * 5);
+    }
+    .col_md_4 {
+        width: calc(100% / 12 * 4);
+    }
     .phone {
         width: 50%;
     }
-    .plannings h2, .testimonials h2 {
+    .plannings h2, .testimonials h2, .benefits h2 {
         font-size: 3rem;
     }
     .testimonials .card {
@@ -353,6 +398,9 @@ nav {
     }
     .cit {
         text-align: left;
+    }
+    .about_us .profile, .col_md_7 {
+        padding: 2rem;
     }
 
 }
