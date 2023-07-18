@@ -113,9 +113,12 @@ img {
     height: 100%;
     flex-direction: column;
     justify-content: space-between;
-    background-color: var(--rl-front-light);
     border-radius: 1rem;
     padding: 1rem 1.5rem 0 1.5rem;
+}
+
+.services .card {
+    background-color: var(--rl-front-light);
 }
 
 
@@ -138,6 +141,14 @@ img {
     background-color: var(--rl-front);
     color: var(--rl-white);
     padding: 0.5rem 2rem;
+}
+
+.btn_circle {
+    background-color: var(--rl-principal);
+    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
 }
 
 /* #endregion Btn */
@@ -206,6 +217,38 @@ nav {
 
 }
 
+.plannings {
+    background-color: var(--rl-principal);
+    color: var(--rl-white);
+}
+
+.plannings h2 {
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+.w_card {
+    background-color: var(--rl-white);
+    border-radius: 3rem;
+    padding: 1rem 0;
+    text-align: center;
+    margin-top: 1rem;
+    color: var(--rl-black);
+    flex-direction: column;
+    align-items: center;
+}
+
+.w_card h4 {
+    padding-top: 1rem;
+}
+
+.w_card p {
+    padding: 1rem 0;
+}
+
+.w_card i {
+    color: var(--rl-black);
+}
 
 
 
@@ -217,15 +260,19 @@ nav {
 /* #region Tablet */
 
 @media screen and (min-width: 768px) {
-    .services .col_lg_8 {
+    .services .col_md_8 {
         width: calc(100% / 12 * 8);
     }
-    .services .col_lg_4 {
+    .services .col_md_4 {
         width: calc(100% / 12 * 4);
     }
     .phone {
         width: 50%;
     }
+    .plannings h2 {
+        font-size: 3rem;
+    }
+
 }
 
 /* #endregion Tablet */
@@ -243,6 +290,18 @@ nav {
     }
     .d-lg-none {
         display: none;
+    }
+    .plannings .col_lg_6 {
+        width: calc(100% / 12 * 6);
+    }
+    .plannings .w_card {
+        margin-top: 10rem;
+    }
+    .plannings .card {
+        justify-content: space-between;
+    }
+    .plannings h2 {
+        padding-bottom: 7rem;
     }
 }
 
