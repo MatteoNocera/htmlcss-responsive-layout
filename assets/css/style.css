@@ -120,7 +120,7 @@ img {
 
 .services .card {
     background-color: var(--rl-front-light);
-    box-shadow: 0 0 10px 3px var(--rl-front) inset;
+    box-shadow: 0 0 10px 3px var(--rl-front);
 }
 
 .w_card {
@@ -315,11 +315,21 @@ nav {
     aspect-ratio: 1;
 }
 
+.cit h5 {
+    padding-top: 1rem;
+}
+
 .cit {
     color: var(--rl-white);
     line-height: 2rem;
     font-style: italic;
+    transition: all 500ms;
 }
+
+.cit:hover{
+    font-size: 2rem;
+}
+
 /* #endregion testimonials */
 
 /* #region benefits */
@@ -379,6 +389,12 @@ nav {
     color: var(--rl-principal);
     font-weight: bold;
 }
+
+cite:active {
+    font-size: 3rem;
+    transition: all 1s;
+}
+
 /* #endregion about_us */
 
 /* #region free */
