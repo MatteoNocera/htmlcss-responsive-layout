@@ -19,6 +19,7 @@ body {
     --rl-black: #000000;
     --rl-light: #d8d9da;
     --rl-card-light: #5a6f80;
+    --rl-attention: #fdc15f;
 }
 
 /* #endregion Common */
@@ -125,7 +126,10 @@ header a, main a {
     text-decoration: none;
 }
 
-
+.plannings, .benefits, .free {
+    background-color: var(--rl-principal);
+    color: var(--rl-white);
+}
 
 /* #endregion Utilities */
 
@@ -166,6 +170,13 @@ header a, main a {
     text-align: center;
 }
 
+.free a {
+    color: var(--rl-principal);
+    background-color: var(--rl-white);
+    padding: 0.5rem 1.5rem;
+    border-radius: 1rem;
+}
+
 /* #endregion Btn */
 
 
@@ -196,6 +207,7 @@ nav {
 
 /* #region Main */
 
+/* #region services */
 .services h2 {
     color: var(--rl-front);
 }
@@ -230,12 +242,9 @@ nav {
     transform: scale(2);
     margin: 3rem 0;
 }
-/* /.servicies */
+/* #endregion servicies */
 
-.plannings, .benefits {
-    background-color: var(--rl-principal);
-    color: var(--rl-white);
-}
+/* #region plannings */
 
 .plannings h2 {
     font-size: 1.5rem;
@@ -267,7 +276,9 @@ nav {
 .w_card i {
     color: var(--rl-black);
 }
-/* /.plannings */
+/* #endregion plannings */
+
+/* #region testimonials */
 
 .committed, .testimonials .card {
     text-align: center;
@@ -302,12 +313,9 @@ nav {
     line-height: 2rem;
     font-style: italic;
 }
-/* /.testimonials */
+/* #endregion testimonials */
 
-.benefits {
-    color: var(--rl-white);
-}
-
+/* #region benefits */
 .benefits h2 {
     padding: 2rem 0;
     text-align: center;
@@ -329,7 +337,9 @@ nav {
 .benefits p {
     margin-bottom: 1rem;
 }
-/* /.benefits */
+/* #endregion benefits */
+
+/* #region about_us */
 
 .about_us {
     margin: 2rem 0;
@@ -362,7 +372,42 @@ nav {
     color: var(--rl-principal);
     font-weight: bold;
 }
-/* /.about_us */
+/* #endregion about_us */
+
+/* #region free */
+
+.free {
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.free h3 {
+    padding: 1rem 0 2rem 0;
+}
+
+.free h2 {
+    font-size: 2.5rem;
+    color: var(--rl-attention);
+}
+
+.free p {
+    margin: 2rem 0;
+}
+
+.copy {
+    margin: 2rem 0;
+}
+
+.copy a {
+    background-color: transparent;
+    text-decoration: underline;
+    color: var(--rl-white);
+    font-size: 0.8rem;
+    padding: 0;
+}
+
+/* #endregion free */
+
 
 /* #endregion Main */
 
@@ -402,6 +447,9 @@ nav {
     .about_us .profile, .col_md_7 {
         padding: 2rem;
     }
+    .free .container {
+        max-width: 60%;
+    }
 
 }
 
@@ -436,6 +484,10 @@ nav {
     .col_lg_4 {
         width: calc(100% / 12 * 4);
     }
+    .free .container {
+        max-width: 30%;
+    }
+    
 }
 
 /* #endregion Desktop */
