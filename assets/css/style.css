@@ -214,8 +214,8 @@ nav {
     color: var(--rl-front);
     transform: scale(2);
     margin: 3rem 0;
-
 }
+/* /.servicies */
 
 .plannings {
     background-color: var(--rl-principal);
@@ -249,6 +249,40 @@ nav {
 .w_card i {
     color: var(--rl-black);
 }
+/* /.plannings */
+
+.committed, .testimonials .card {
+    text-align: center;
+}
+
+.testimonials .card {
+    background-color: var(--rl-principal);
+    border-radius: 2rem;
+    flex-direction: column;
+    
+}
+
+.testimonials h2 {
+    color: var(--rl-principal);
+    padding: 2rem 0;
+}
+
+.profile {
+    height: 100%;
+    width: 100%;
+}
+
+.testimony {
+    object-fit: cover;
+    border-radius: 50%;
+    max-width: 80%;
+    aspect-ratio: 1;
+}
+
+.cit {
+    color: var(--rl-white);
+    line-height: 2rem;
+}
 
 
 
@@ -269,8 +303,15 @@ nav {
     .phone {
         width: 50%;
     }
-    .plannings h2 {
+    .plannings h2, .testimonials h2 {
         font-size: 3rem;
+    }
+    .testimonials .card {
+        flex-direction: row;
+        align-items: center;
+    }
+    .cit {
+        text-align: left;
     }
 
 }
